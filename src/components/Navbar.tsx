@@ -5,6 +5,7 @@ import Image from "next/image";
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import shadowcorpLogo from "../assets/shadowcorp_logo.png";
 import shadowcorpLogoW from "../assets/shadowcorp_logow.png";
+import Link from 'next/link';
 
 const navigation = [
     { name: 'ABOUT', href: '#' },
@@ -41,7 +42,7 @@ export default function Navbar() {
             <header className="absolute inset-x-0 top-0 z-50">
                 <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
                     <div className="flex lg:flex-1">
-                        <a href="/" className="-m-1.5 p-1.5">
+                        <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <Image
                                 className="h-8 w-auto"
@@ -50,7 +51,7 @@ export default function Navbar() {
                                 width={70}
                                 height={70}
                             />
-                        </a>
+                        </Link>
                         <button
                             onClick={toggleDarkMode}
                             type="button"
@@ -86,14 +87,14 @@ export default function Navbar() {
                     <div className="fixed inset-0 z-50" />
                     <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white dark:bg-zinc-900 px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-zinc-900/10">
                         <div className="flex items-center justify-between">
-                            <a href="/" className="-m-1.5 p-1.5">
+                            <Link href="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
                                 <Image
                                     className="h-8 w-auto"
                                     src={logoPath}
                                     alt=""
                                 />
-                            </a>
+                            </Link>
                             <button
                                 type="button"
                                 className="-m-2.5 rounded-md p-2.5 text-zinc-700 dark:text-white"
