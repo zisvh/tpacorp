@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import Navbar from "../components/Navbar"
 import Keyboard from "@/assets/kbd.png";
 import Headset from "@/assets/headset.png";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -59,12 +60,12 @@ export default function Home() {
                             N°1 professional esports global agency. Based in Korea.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
-                            <a
+                            <Link
                                 href="/players"
                                 className="transition transform rounded-md bg-red-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
                                 SEE PLAYERS
-                            </a>
+                            </Link>
                             <a href="#" className="transition transform text-sm opacity-30 hover:opacity-100 font-semibold leading-6 text-zinc-900 dark:text-white">
                                 LEARN MORE <span aria-hidden="true">→</span>
                             </a>
