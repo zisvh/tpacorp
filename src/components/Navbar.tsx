@@ -5,8 +5,6 @@ import Image from "next/image";
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
 import shadowcorpLogo from "../assets/shadowcorp_logo.png";
 import shadowcorpLogoW from "../assets/shadowcorp_logow.png";
-import Keyboard from "../assets/kbd.png";
-import Headset from "../assets/headset.png";
 
 const navigation = [
     { name: 'ABOUT', href: '#' },
