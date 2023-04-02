@@ -3,13 +3,13 @@ import {ArrowTrendingUpIcon, BoltIcon, DocumentCheckIcon} from "@heroicons/react
 
 const members = [
     {
-        player_icon: "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/EDG_Viper_2022_Worlds.png",
-        player_ign: "Viper",
-        player_name: "Park Do-hyeon (박도현)\n",
-        player_desc: "Park \"Viper\" Do-hyeon (Hangul: 박도현) is a League of Legends esports player, currently bot laner for Hanwha Life Esports.",
-        player_rank: "Challenger - 1,537LP",
-        player_team: "Hanwha Life Esports",
-        path: "https://lol.fandom.com/wiki/Viper_(Park_Do-hyeon)"
+        player_icon: "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/C9_Berserker_2023_Split_1.png",
+        player_ign: "Berserker",
+        player_name: "Kim Min-cheol (김민철)\n",
+        player_desc: "Kim \"Berserker\" Min-cheol (Hangul: 김민철) is a League of Legends esports player, currently bot laner for Cloud9.",
+        player_rank: "Challenger - 932LP",
+        player_team: "Cloud9 Esports",
+        path: "https://lol.fandom.com/wiki/Berserker_(Kim_Min-cheol)"
     }, {
         player_icon: "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/T1_Oner_2022_Split_2.png",
         player_ign: "Oner",
@@ -26,6 +26,14 @@ const members = [
         player_rank: "Challenger - 1,721LP",
         player_team: "GENG Esports",
         path: "https://lol.fandom.com/wiki/Quad",
+    }, {
+        player_icon: "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/EDG_Viper_2022_Worlds.png",
+        player_ign: "Viper",
+        player_name: "Park Do-hyeon (박도현)\n",
+        player_desc: "Park \"Viper\" Do-hyeon (Hangul: 박도현) is a League of Legends esports player, currently bot laner for Hanwha Life Esports.",
+        player_rank: "Challenger - 1,537LP",
+        player_team: "Hanwha Life Esports",
+        path: "https://lol.fandom.com/wiki/Viper_(Park_Do-hyeon)"
     }
 ]
 
