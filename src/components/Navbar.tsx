@@ -3,21 +3,21 @@ import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import Image from "next/image";
 import { MoonIcon, SunIcon } from '@heroicons/react/24/solid'
-import shadowcorpLogo from "../assets/shadowcorp_logo.png";
-import shadowcorpLogoW from "../assets/shadowcorp_logow.png";
+import LogoTpa from "../assets/tpa_corp.png";
+import LogoTpaB from "../assets/tpa_corp_b.png";
 import Link from 'next/link';
 
 const navigation = [
-    { name: 'ABOUT', href: '#' },
+    { name: 'ABOUT', href: '/about' },
     { name: 'PLAYERS', href: '/players' },
-    { name: 'PARTNERS', href: '#' },
-    { name: 'CONTACT', href: '#' },
+    { name: 'PARTNERS', href: '/partners' },
+    { name: 'CONTACT', href: '/contact' },
 ]
 
 export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
     const [isDark, setIsDark] = useState(false);
-    const logoPath = isDark ? shadowcorpLogoW : shadowcorpLogo;
+    const logoPath = isDark ? LogoTpa : LogoTpaB;
 
     useEffect(() => {
         const isDarkMode = localStorage.getItem('isDarkMode');
@@ -45,17 +45,15 @@ export default function Navbar() {
                         <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Your Company</span>
                             <Image
-                                className="h-8 w-auto"
+                                className="h-14 w-auto"
                                 src={logoPath}
                                 alt="test"
-                                width={70}
-                                height={70}
                             />
                         </Link>
                         <button
                             onClick={toggleDarkMode}
                             type="button"
-                            className="transition transform ml-5 rounded-full dark:hover:bg-zinc-800 hover:bg-zinc-200 p-1 text-zinc-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                            className="transition transform ml-5 rounded-full dark:hover:bg-zinc-800 hover:bg-zinc-200 p-1 px-4 text-zinc-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
                         >
                             {isDark ? <MoonIcon className="h-6 w-6" aria-hidden="true" /> : <SunIcon className="h-6 w-6" aria-hidden="true" />}
                         </button>
@@ -90,7 +88,7 @@ export default function Navbar() {
                             <Link href="/" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
                                 <Image
-                                    className="h-8 w-auto"
+                                    className="h-14 w-auto"
                                     src={logoPath}
                                     alt=""
                                 />
