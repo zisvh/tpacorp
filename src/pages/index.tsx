@@ -32,10 +32,10 @@ export default function Home() {
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="transition transform relative rounded-full px-3 py-1 text-sm leading-6 text-zinc-600 dark:text-zinc-400 ring-1 ring-zinc-900/10 dark:ring-zinc-200/10 dark:hover:ring-zinc-200/20 hover:ring-zinc-900/20">
                             We are TPA Corp{' '}
-                            <a href="/about" className="font-semibold text-[#a09573] dark:text-[#c9bc95]">
+                            <Link href="/about" className="font-semibold text-[#a09573] dark:text-[#c9bc95]">
                                 <span className="absolute inset-0" aria-hidden="true" />
                                 Read more <span aria-hidden="true">&rarr;</span>
-                            </a>
+                            </Link>
                         </div>
                     </div>
                     <Image
