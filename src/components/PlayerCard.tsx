@@ -2,6 +2,7 @@ import Image from "next/image";
 import {ArrowTrendingUpIcon, CakeIcon, DocumentCheckIcon, UserIcon} from "@heroicons/react/20/solid";
 import {useEffect, useState} from "react";
 import { supabase } from "@/lib/supabaseClient";
+import Link from "next/link";
 
 // types for ShadowPlayer
 interface ShadowPlayer {
@@ -62,7 +63,7 @@ export default function PlayerCard ()
                     shadowPlayers.map((item, idx) => (
                         <li key={idx}
                             className="px-4 py-5 duration-150 hover:border-white hover:rounded-xl hover:bg-gray-200 dark:hover:bg-zinc-800">
-                            <a href={item.path} className="space-y-3">
+                            <Link href={item.path} className="space-y-3">
                                 <div className="flex items-center gap-x-3">
                                     <div
                                         className="bg-teal-600 w-16 h-16 rounded-full flex items-center justify-center">
@@ -90,7 +91,7 @@ export default function PlayerCard ()
                                     <DocumentCheckIcon className="w-6 text-teal-500" />
                                         {item.player_team}
                                 </div>
-                            </a>
+                            </Link>
                         </li>
                     ))
                 }

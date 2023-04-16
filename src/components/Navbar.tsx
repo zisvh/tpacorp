@@ -70,15 +70,15 @@ export default function Navbar() {
                     </div>
                     <div className="hidden lg:flex lg:gap-x-12">
                         {navigation.map((item) => (
-                            <a key={item.name} href={item.href} className="transition transform text-sm font-semibold leading-6 text-zinc-900 dark:text-white opacity-30 hover:opacity-100">
+                            <Link key={item.name} href={item.href} className="transition transform text-sm font-semibold leading-6 text-zinc-900 dark:text-white opacity-30 hover:opacity-100">
                                 {item.name}
-                            </a>
+                            </Link>
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <a href="#" className="transition transform text-sm font-semibold leading-6 dark:text-white text-zinc-900 opacity-30 hover:opacity-100">
+                        <Link href="#" className="transition transform text-sm font-semibold leading-6 dark:text-white text-zinc-900 opacity-30 hover:opacity-100">
                             LOG IN <span aria-hidden="true">&rarr;</span>
-                        </a>
+                        </Link>
                     </div>
                 </nav>
                 <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
@@ -106,13 +106,13 @@ export default function Navbar() {
                             <div className="-my-6 divide-y divide-zinc-500/10">
                                 <div className="space-y-2 py-6">
                                     {navigation.map((item) => (
-                                        <a
+                                        <Link
                                             key={item.name}
                                             href={item.name.toLowerCase()}
                                             className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-zinc-900 dark:text-white dark:hover:bg-zinc-800 hover:bg-zinc-50"
                                         >
                                             {item.name}
-                                        </a>
+                                        </Link>
                                     ))}
                                 </div>
                                 <div className="py-6">
