@@ -1,5 +1,5 @@
 import axios from "axios";
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import { RiLoader5Fill } from "react-icons/ri";
 import { validate } from "@/lib/validate";
 import Input from "./Input";

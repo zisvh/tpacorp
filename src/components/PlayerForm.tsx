@@ -1,7 +1,4 @@
-import axios from "axios";
-import React, {Fragment, useEffect, useState} from "react";
-import { RiLoader5Fill } from "react-icons/ri";
-import { validate } from "@/lib/validate";
+import React, {Fragment, useState} from "react";
 import Input from "./Input";
 import TextArea from "./TextArea";
 import {Dialog, Transition} from "@headlessui/react";

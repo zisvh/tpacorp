@@ -6,16 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="657e8fed-94f8-4ea6-bf64-9fa755897954" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/About.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/About.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/shadowcorp_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/shadowcorp_logow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddPlayer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddPlayer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreatorCard.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/PlayerCard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlayerCard.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_document.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/api/mail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/api/mail.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/players/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/champions/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PlayerForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PlayerForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useShadowPlayers.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/api/hello.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/ShadowPlayer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +107,7 @@
       <workItem from="1681474999420" duration="22570000" />
       <workItem from="1682009517585" duration="17817000" />
       <workItem from="1682321736818" duration="3489000" />
-      <workItem from="1682329000641" duration="10959000" />
+      <workItem from="1682329000641" duration="12844000" />
     </task>
     <servers />
   </component>

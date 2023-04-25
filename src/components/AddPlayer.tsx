@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {PlusIcon} from "@heroicons/react/20/solid";
 import {PlayerForm} from "@/components/PlayerForm";
 

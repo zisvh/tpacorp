@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {ArrowTrendingUpIcon, CakeIcon, DocumentCheckIcon, UserIcon} from "@heroicons/react/20/solid";
+import {CakeIcon, DocumentCheckIcon, UserIcon} from "@heroicons/react/20/solid";
 import {useEffect, useState} from "react";
 import { supabase } from "@/lib/supabaseClient";
 import Link from "next/link";
