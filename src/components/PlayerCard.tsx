@@ -55,8 +55,8 @@ export default function PlayerCard ()
     <section className="py-28">
         <div className="max-w-screen-lg mx-auto px-4 md:px-8">
             <div className="max-w-md">
-                <h1 className="text-zinc-900 dark:text-white text-2xl font-bold sm:text-3xl">Players</h1>
-                <p className="text-zinc-600 dark:text-gray-400 mt-2">Our outstanding players.</p>
+                <h1 className="text-zinc-900 dark:text-white text-2xl font-bold sm:text-3xl">Champions</h1>
+                <p className="text-zinc-600 dark:text-gray-400 mt-2">These are our champions, made to conquer.</p>
             </div>
             <ul className="mt-12 divide-y space-y-3">
                 {
@@ -66,19 +66,19 @@ export default function PlayerCard ()
                             <Link href={item.path} className="space-y-3">
                                 <div className="flex items-center gap-x-3">
                                     <div
-                                        className="bg-teal-600 w-16 h-16 rounded-full flex items-center justify-center">
+                                        className="bg-[#a09573] w-16 h-16 rounded-full flex items-center justify-center">
                                         { item.player_icon ?
                                         <Image alt="player photo"
                                             src={item.player_icon}
                                            width={50}
                                            height={50} className="rounded-full"/>
                                             :
-                                            <UserIcon className="w-16 text-teal-800" />
+                                            <UserIcon className="w-16 text-[#c9bc95]" />
                                         }
                                     </div>
                                     <div>
                                         <span
-                                            className="block text-sm text-teal-500 font-medium">{item.player_ign}</span>
+                                            className="block text-sm text-[#c9bc95] font-medium">{item.player_ign}</span>
                                         <h3 className="text-base text-zinc-800 dark:text-white font-semibold mt-1">{item.player_name}</h3>
                                     </div>
                                 </div>
@@ -86,9 +86,9 @@ export default function PlayerCard ()
                                     {item.player_desc}
                                 </p>
                                 <div className="text-sm text-zinc-900 dark:text-white font-semibold -tracking-tight flex items-center gap-6">
-                                    <CakeIcon className="w-6 text-teal-500" />
+                                    <CakeIcon className="w-6 text-[#c9bc95]" />
                                     {item.player_born ? getAge(item.player_born) + " Years old" : '???'}
-                                    <DocumentCheckIcon className="w-6 text-teal-500" />
+                                    <DocumentCheckIcon className="w-6 text-[#c9bc95]" />
                                         {item.player_team}
                                 </div>
                             </Link>

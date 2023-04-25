@@ -57,17 +57,17 @@ export default function Home() {
                             Champions in the <span className="text-transparent bg-clip-text bg-gradient-to-l from-[#a09573] to-[#c9bc95]">making.</span>
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-zinc-600">
-                            Professional esport global agency. Based in Korea.
+                            Professional sports global agency. Based in Korea.
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <Link
-                                href="/players"
-                                className="transition transform rounded-md bg-[#c9bc95] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#a09573] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                href="/champions"
+                                className="transition transform rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm bg-[#c9bc95] hover:bg-[#a09573] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                SEE PLAYERS
+                                Our Champions
                             </Link>
                             <a href="https://www.instagram.com/tpa_corp/" className="transition transform text-sm opacity-30 hover:opacity-100 font-semibold leading-6 text-zinc-900 dark:text-white">
-                                LEARN MORE <span aria-hidden="true">→</span>
+                                Learn More <span aria-hidden="true">→</span>
                             </a>
                         </div>
                     </div>

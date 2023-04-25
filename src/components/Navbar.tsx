@@ -8,10 +8,10 @@ import LogoTpaB from "../assets/tpa_corp_b.png";
 import Link from 'next/link';
 
 const navigation = [
-    { name: 'ABOUT', href: '/about' },
-    { name: 'PLAYERS', href: '/players' },
-    { name: 'PARTNERS', href: '/partners' },
-    { name: 'CONTACT', href: '/contact' },
+    { name: 'About', href: '/about' },
+    { name: 'Champions', href: '/champions' },
+    { name: 'Partners', href: '/partners' },
+    { name: 'Contact', href: '/contact' },
 ]
 
 export default function Navbar() {
@@ -53,7 +53,7 @@ export default function Navbar() {
                         <button
                             onClick={toggleDarkMode}
                             type="button"
-                            className="transition transform ml-5 rounded-full dark:hover:bg-zinc-800 hover:bg-zinc-200 p-1 px-4 text-zinc-400 focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                            className="transition transform ml-5 rounded-full dark:hover:bg-zinc-800 hover:bg-zinc-200 p-1 px-4 text-zinc-400 focus:outline-none focus:ring-2 focus:ring-[#c9bc95]"
                         >
                             {isDark ? <MoonIcon className="h-6 w-6" aria-hidden="true" /> : <SunIcon className="h-6 w-6" aria-hidden="true" />}
                         </button>
@@ -76,8 +76,8 @@ export default function Navbar() {
                         ))}
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                        <Link href="#" className="transition transform text-sm font-semibold leading-6 dark:text-white text-zinc-900 opacity-30 hover:opacity-100">
-                            LOG IN <span aria-hidden="true">&rarr;</span>
+                        <Link href="/login" className="transition transform text-sm font-semibold leading-6 dark:text-white text-zinc-900 opacity-30 hover:opacity-100">
+                            Dashboard <span aria-hidden="true">&rarr;</span>
                         </Link>
                     </div>
                 </nav>
@@ -116,12 +116,12 @@ export default function Navbar() {
                                     ))}
                                 </div>
                                 <div className="py-6">
-                                    <a
-                                        href="#"
+                                    <Link
+                                        href="/login"
                                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-zinc-900 dark:text-white dark:hover:bg-zinc-800 hover:bg-zinc-50"
                                     >
-                                        Log in
-                                    </a>
+                                        Dashboard
+                                    </Link>
                                 </div>
                             </div>
                         </div>

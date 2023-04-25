@@ -6,7 +6,7 @@ export default function Players() {
     return (
         <div>
             <Head>
-                <title>TPA | Players</title>
+                <title>TPA | Champions</title>
             </Head>
             <Navbar />
             <div

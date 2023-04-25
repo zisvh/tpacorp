@@ -7,25 +7,25 @@ const features = [
     {
         name: 'Player promotion',
         description:
-            'We provide a platform for players to showcase their skills and get discovered by top teams. Our team works to promote our players and help them reach their full potential.',
+            'We provide a platform for champions to showcase their skills and get discovered by top teams. Our team works to promote our champions and help them reach their full potential.',
         icon: ArrowUpCircleIcon,
     },
     {
         name: 'Contract negotiation',
         description:
-            'Our experienced agents negotiate player contracts with top teams to ensure that our players are compensated fairly and have the support they need to succeed.',
+            'Our experienced agents negotiate player contracts with top teams to ensure that our champions are compensated fairly and have the support they need to succeed.',
         icon: DocumentIcon,
     },
     {
         name: 'Personalized support',
         description:
-            'We offer personalized support to our players, including coaching, training, and mental health resources. Our team is dedicated to helping our players perform at their best both in and out of the game.',
+            'We offer personalized support to our champions, including coaching, training, and mental health resources. Our team is dedicated to helping our champions perform at their best both in and out of the game.',
         icon: UserGroupIcon,
     },
     {
         name: 'Community building',
         description:
-            'Our agency is committed to building a supportive and inclusive community for esports players. We organize events, connect players with fans, and foster a culture of respect and collaboration.',
+            'Our agency is committed to building a supportive and inclusive community for our champions. We organize events, connect champions with fans, and foster a culture of respect and collaboration.',
         icon: HeartIcon,
     },
 ];
@@ -50,11 +50,11 @@ export default function About() {
                         We are a korean agency that provides a platform for players to showcase their skills and get discovered by top teams.
                     </p>
                     <div className="items-center justify-center gap-x-3 space-y-3 sm:flex sm:space-y-0">
-                        <button onClick={handleClick} className="block py-2 px-4 text-white font-medium bg-teal-600 duration-150 hover:bg-teal-800 active:bg-teal-700 rounded-lg shadow-lg hover:shadow-none">
+                        <button onClick={handleClick} className="block py-2 px-4 text-white font-medium duration-150 bg-[#c9bc95] hover:bg-[#a09573] active:bg-[#857b5e] rounded-lg shadow-lg hover:shadow-none">
                             Why TPA ?
                         </button>
-                        <Link href="/players" className="block py-2 px-4 text-gray-700 dark:text-white hover:text-gray-500 font-medium duration-150 active:bg-gray-100 border rounded-lg">
-                            See our players
+                        <Link href="/champions" className="block py-2 px-4 text-gray-500 hover:text-gray-900 dark:hover:text-white font-medium duration-150 active:bg-gray-100 border dark:border-gray-500 hover:border-gray-900 dark:hover:border-white rounded-lg">
+                            See our champions
                         </Link>
                     </div>
                 </div>
