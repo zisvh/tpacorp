@@ -10,6 +10,9 @@ import { supabase } from "@/lib/supabaseClient";
 import Link from "next/link";
 import { Dialog, Transition } from '@headlessui/react'
 import AddPlayer from "@/components/AddPlayer";
+import AddPartner from "@/components/AddPartner";
+import PartnersDisplay from "@/components/PartnersDisplay";
+import PartnersData from "@/components/PartnersData";
 
 // types for ShadowPlayer
 interface ShadowPlayer {
@@ -25,9 +28,16 @@ interface ShadowPlayer {
     // add more properties here as needed
 }
 
+interface ShadowPartner {
+    id: number;
+    title: string;
+    subtitle: string;
+}
+
 export default function PlayerData ()
 {
     const [shadowPlayers, setShadowPlayers] = useState<ShadowPlayer[]>([]);
+    const [shadowPartners, setShadowPartners] = useState<ShadowPartner[]>([]);
     let [isOpen, setIsOpen] = useState(false)
 
     function closeModal() {
@@ -186,6 +196,11 @@ export default function PlayerData ()
                 <AddPlayer
                     shadowPlayers={shadowPlayers}
                     setShadowPlayers={setShadowPlayers}/>
+                <div className="m-5 w-7/10 h-px bg-gray-400 mx-auto"></div>
+                <PartnersData />
+                <AddPartner
+                    shadowPartners={shadowPartners}
+                    setShadowPartners={setShadowPartners}/>
             </div>
         </section>
     )
